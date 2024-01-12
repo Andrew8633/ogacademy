@@ -139,17 +139,21 @@ function test1() {
         background-color: rgb(3, 143,151);
         font-family: gagalin;
         height: auto;
-        
+        padding: 20px;
         width: 20vw;
         border-radius: 100px;
         font-size: 6vw;
+        font-weight:300;
     }
     #star, h3 {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 50%;
-        
+
+    }
+    a:hover{
+        cursor: pointer;
     }
     #box{
         background-color: white;
@@ -167,7 +171,9 @@ function test1() {
     }
     
   
-    
+    a{
+        text-decoration: none;
+    }
     .word, .definition{
         border-style: solid;
         
@@ -207,13 +213,14 @@ function test1() {
 </head>
 <body>
     <h3 class=title><span class='centertext'>ESIO TROT UNIT 1</span></h3>
+
 <div id="box">
 <div class="word" id="aa" onclick="test1()" >flat</div>
 <div class="definition" id="ab" onclick="test2()">an apartment (British English)</div>
 </div>   
 
 
-    <div id="box">
+<div id="box">
 <div class="word" id="ba" onclick="test3()" >riot</div>
 <div class="definition" id="bb" onclick="test4()">an impressively large or varied display</div>
 </div>   
